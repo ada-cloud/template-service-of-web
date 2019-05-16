@@ -12,8 +12,8 @@
   "license": "MIT",
   "dependencies": {
     "ada-cloud-hub": "next",
+    "ada-cloud-util": "latest",
     "adajs": "^3.0.0-beta.40",
-    "koa-router": "^7.4.0",
     "koa-static": "^5.0.0"
   },
   "ada": {
