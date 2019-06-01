@@ -11,7 +11,7 @@
   "author": "WangJinliang(hou80houzhu)",
   "license": "MIT",
   "dependencies": {
-    "ada-cloud-hub": "next",
+    "ada-cloud-hub": "latest",
     "ada-cloud-util": "latest",
     "adajs": "^3.0.0-beta.40",
     "koa-static": "^5.0.0"
