@@ -6,8 +6,7 @@
   "scripts": {
     "ada": "node node_modules/.bin/adajs",
     "pack": "node node_modules/.bin/ada-pack",
-    "dev": "node node_modules/ada-pack/bin/cli dev || true",
-    "g": "node node_modules/ada-cloud-util/bin/cli boost"
+    "dev": "node node_modules/ada-pack/bin/cli dev || true"
   },
   "author": "WangJinliang(hou80houzhu)",
   "license": "MIT",
@@ -18,8 +17,8 @@
     "koa-static": "^5.0.0"
   },
   "ada": {
-    "develop": "./app.js",
-    "publish": "./app.js"
+    "develop": "./app/app.js",
+    "publish": "./app/app.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",

@@ -3,9 +3,9 @@ let app = {
     sourcePath: "./app/src/",
     distPath: "./dist/",
     indexPath: "./dist/index.html",
-    entryPath: "./app/src/entries/",
-    main: "./app/src/root.js",
-    staticPath: "./app/src/static",
+    entryPath: "./src/entries/",
+    main: "./src/root.js",
+    staticPath: "./src/static",
     baseInfo: {
         name: "test",
         description: "test",
@@ -20,7 +20,15 @@ let app = {
     },
     server: {
         serverPath: "./index.js",
-        port: 8080
+        port: 8081,
+        proxy: [
+            {
+                path: ["/api/","/comet/"], option: {
+                    target: 'http://127.0.0.1:8189',
+                    changeOrigin: true
+                }
+            }
+        ]
     },
     ssr: {
         urls: ["/"],
