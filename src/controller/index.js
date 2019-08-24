@@ -1,17 +1,13 @@
-const PrivateVerifiyer = require("ada-cloud-util/verifier/private");
-const { Controller } = require("ada-cloud-util/boost");
+import { Controller } from "ada-cloud-util/boost";
+import { controller, action } from "ada-cloud-util/boost/annotation";
 
-class TextController extends Controller {
-    static configure = {
-        basePath: "",
-        actions: {
-            login: { path: "/login", method: 'get' }
-        }
-    }
+@controller({ path: "/" })
+class TestController extends Controller {
 
-    login({ request }) {
-        let { username, password } = request.query;
+    @action({ path: "/test" })
+    test({ request }) {
+        return 'hello world';
     }
 }
 
-module.exports = TextController;
+export default TestController;
